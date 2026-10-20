@@ -1,0 +1,27 @@
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  /* margin-right: 20px; */
+}
+
+.nav-btn {
+  margin-right : 10px;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.active {
+  color: aqua;
+}
+
+.logo {
+  height: 50px;
+  width: 140px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
