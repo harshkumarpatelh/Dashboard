@@ -20,11 +20,7 @@ function Navbar(props: any) {
 
 
         <div>
-            {!isLoggedIn && <Link className="nav-btn" to={CONSTANT.ROUTES.LOGIN}><button onClick={() => {
-                setisLoggedIn(true);
-                toast.success('User has been logged in successfully')
-
-            }}>Login</button></Link>}
+            {!isLoggedIn && <Link className="nav-btn" to={CONSTANT.ROUTES.LOGIN}><button>Login</button></Link>}
             {!isLoggedIn && <Link className="nav-btn" to={CONSTANT.ROUTES.SINGUP}><button>Signup</button></Link>}
             {isLoggedIn && <Link className="nav-btn" to={CONSTANT.ROUTES.DASHABORD}><button>Dashboard</button></Link>}
             {isLoggedIn && <Link className="nav-btn" to={CONSTANT.ROUTES.LOGOUT}><button onClick={() => {
